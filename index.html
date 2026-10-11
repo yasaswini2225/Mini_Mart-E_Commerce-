@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<title>Store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="#" data-action="home" aria-label="Bazaar Mini home">Mini<span>Mart</span></a>
+    <div class="search"><input id="q" type="search" placeholder="Search products" aria-label="Search products" autocomplete="off"></div>
+    <nav class="bar-actions" aria-label="Account and cart">
+      <button class="btn ghost" id="ordersBtn" data-action="orders">Orders</button>
+      <button class="btn" id="accountBtn" data-action="account">Login / Register</button>
+      <button class="btn primary cart-btn" data-action="cart" aria-label="Open cart">Cart <b id="cartCount">0</b></button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main"></main>
+<footer class="wrap foot">Mini Mart is a demo store. Orders, accounts and the cart stay in this browser. No real payment is taken and no email is sent.</footer>
+
+<div id="layer"></div>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
